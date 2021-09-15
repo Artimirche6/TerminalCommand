@@ -1,0 +1,14 @@
+
+1. Certain files in current dir or any other dir
+create files abc.txt efg.txt lmo.txt
+
+abc.txt -> abc/abc.txt
+
+efg.txt -> efg/efg.txt
+
+1. create files
+2. list out this text files to move
+3. extract the name of the file/basename
+4. using extracted basename , we will create directory
+5. then copy files to respective folder
+6. repeat this activity to all files 

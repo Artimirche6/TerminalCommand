@@ -1,0 +1,65 @@
+directory ->
+	create -> mkdir dirname
+	create sub directory -> mkdir -p dir1/dir2
+	delete empty directory -> rmdir dirname
+	delete non-empty directory -> rm -r dirname/rm -R dirname
+
+navigation in directory -> 
+	cd(change directory) -> cd dirname
+	come back to parent directory -> cd ..
+	
+what dots represents ->
+	. -> (to represents current dir)
+	.. -> (two dot represent parent dir)
+
+list out files/folders ->
+	ls -> ls files with names
+	ls -l -> list an long format of files & folder
+	ls -a -> it will include the all files also starts with .(dot) as well
+	ls -h -> it will represent the sizes in kb, MB and GB
+
+files related commands ->
+	create an empty file -> touch filename
+	ceate an file -> nano filename
+	remove an file -> rm filename
+	
+view and browse files ->
+	cat filename -> gives and standard o/p of file
+	head filename/head -3 filename
+	tail filename/tail -3 filename
+	less filename
+
+operations related to files ->
+	copy -> cp source_file destination_file/destination_folder
+	copy folder -> cp sourc_folder dest_folder
+	move -> mv souce dest
+	rename -> mv sourc_name new _name
+
+search files/folder ->
+	find -> eg. find . -name '*.pdf'
+
+ 
+pipe operator -> 
+	eg. history | tail -5
+	sort alphabetically ascending -> cat fruits.txt | sort
+	sort alpha desc -> cat fruits.txt | sort -r
+
+Process management ->
+	ps -> process status
+	variants -> ps -elf / every processes of user/long format/full
+	kill any process -> kill -9 PID (-9 means signal's the process to kill  or termiate their itself)
+	user defined process -> sleep 120 &
+	bg -> baground -> bg %jobspec
+	fg -> foreground -> fg %jobspec
+
+pattern matching command/utility ->
+	grep -> global regular expression print
+	eg. cat fruits.txt | grep apple
+	eg. cat data.csv | grep -i caption
+
+environment ->
+	env
+
+system variable ->
+	HOME,USERNAME,SHELL,USER
+	echo $HOME

@@ -1,0 +1,16 @@
+1. Stage 1
+
+  i) Basic Commands
+  ii) Interaction and shell script introduction
+
+2. Stage 2
+  Shell Scripting
+    i) Program Seq
+    ii) Program Sel
+    iii) Program Rep
+    iv) Program Fun
+    v) Program array & dict
+  Git (Version Control)
+
+3. Review
+  Ass

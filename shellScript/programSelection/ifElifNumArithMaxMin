@@ -1,0 +1,41 @@
+#!/bin/bash -x
+
+read -p "Enter the num a : " a
+read -p "Enter the num b : " b
+read -p "Enter the num c : " c
+
+n1=$(($a+$b*$c))
+n2=$(($a%$b+$c))
+n3=$(($c+$a/$b))
+n4=$(($a*$b+$c))
+
+#Maximum
+
+if [ $n1 -gt $n2 -a $n1 -gt $n3 -a $n1 -gt $n4 ]
+then
+      echo "$n1 is a Greatest Number"
+elif [ $n2 -gt $n3 -a $n2 -gt $n4 ]
+then
+     echo "$n2 is a Greatest Number"
+elif [ $n3 -gt $n4]
+then
+     echo "$n3 is a Greatest Number"
+else
+     echo "$n4 is a Greatest Number"
+fi
+
+
+#Minimum
+
+if [ $n1 -lt $n2 -a $n1 -lt $n3 -a $n1 -lt $n4 ]
+then
+      echo "$n1 is a Smallest Number"
+elif [ $n2 -lt $n3 -a $n2 -lt $n4 ]
+then
+     echo "$n2 is a Smallest Number"
+elif [ $n3 -lt $n4 ]
+then
+     echo "$n3 is a Smallest Number"
+else
+     echo "$n4 is a Smallest Number"
+fi
